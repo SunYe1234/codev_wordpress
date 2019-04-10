@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Planning CODEV" company="" webLink="" view-date="2019-04-01" view-index="0" gantt-divider-location="639" resource-divider-location="300" version="2.8.10" locale="fr_FR">
+    <description><![CDATA[planning du projet CODEV]]></description>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="448" order="0"/>
+        <field id="tpd4" name="Date de début" width="94" order="1"/>
+        <field id="tpd5" name="Date de fin" width="78" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="gestion de projet" meeting="false" start="2019-03-14" duration="38" complete="32" expand="true">
+            <task id="1" name="rencontres avec le tuteur" color="#8cb6ce" meeting="false" start="2019-03-14" duration="1" complete="20" thirdDate="2019-04-03" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[S'étend sur toute la durée du projet]]></notes>
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+                <depend id="14" type="1" difference="37" hardness="Strong"/>
+                <depend id="38" type="2" difference="3" hardness="Strong"/>
+            </task>
+            <task id="38" name="cahier des charges" color="#8cb6ce" meeting="false" start="2019-03-20" duration="1" complete="100" thirdDate="2019-04-10" thirdDate-constraint="0" expand="true">
+                <depend id="4" type="2" difference="5" hardness="Strong"/>
+            </task>
+            <task id="4" name="établissement du planning" color="#8cb6ce" meeting="false" start="2019-03-28" duration="1" complete="100" thirdDate="2019-04-08" thirdDate-constraint="0" expand="true">
+                <depend id="5" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="5" name="mise à jour du planning" color="#8cb6ce" meeting="false" start="2019-03-29" duration="1" complete="1" thirdDate="2019-04-09" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[S'étend sur toute la durée du projet
+]]></notes>
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" name="comptes rendus des réunions" color="#8cb6ce" meeting="false" start="2019-03-15" duration="2" complete="20" thirdDate="2019-04-03" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[A lieu après chaque réunion avec le tuteur]]></notes>
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="14" name="obtenir du tuteur une API REST pour effectuer les tests du plugin" color="#8cb6ce" meeting="false" start="2019-05-06" duration="1" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+                <depend id="42" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="42" name="fin du projet" color="#8cb6ce" meeting="true" start="2019-05-07" duration="0" complete="0" thirdDate="2019-04-03" thirdDate-constraint="0" expand="true">
+                <notes><![CDATA[Au plus tard le 26 juin 2019]]></notes>
+                <depend id="34" type="3" difference="0" hardness="Strong"/>
+                <depend id="35" type="3" difference="0" hardness="Strong"/>
+                <depend id="47" type="3" difference="0" hardness="Strong"/>
+                <depend id="131" type="3" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="7" name="mettre en place l'environnement de travail" meeting="false" start="2019-03-14" duration="38" complete="78" expand="true">
+            <depend id="40" type="2" difference="0" hardness="Strong"/>
+            <task id="133" name="formations" color="#8cb6ce" meeting="false" start="2019-03-20" duration="1" complete="100" thirdDate="2019-03-07" thirdDate-constraint="0" expand="true">
+                <depend id="8" type="2" difference="14" hardness="Strong"/>
+            </task>
+            <task id="9" name="installer lampp" color="#8cb6ce" meeting="false" start="2019-03-14" duration="1" complete="100" thirdDate="2019-03-08" thirdDate-constraint="0" expand="true">
+                <depend id="10" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="10" name="installer wordpress en local" color="#8cb6ce" meeting="false" start="2019-03-15" duration="1" complete="50" thirdDate="2019-03-11" thirdDate-constraint="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="8" name="mise en place des dépôts Git + Github" color="#8cb6ce" meeting="false" start="2019-04-10" duration="1" complete="100" thirdDate="2019-03-07" thirdDate-constraint="0" expand="true">
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+                <depend id="45" type="2" difference="0" hardness="Strong"/>
+                <depend id="131" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="45" name="tester le bon fonctionnement du dépôt des versions" color="#8cb6ce" meeting="false" start="2019-04-11" duration="1" complete="100" thirdDate="2019-04-03" thirdDate-constraint="0" expand="true">
+                <depend id="131" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="11" name="tester le développement collectif" color="#8cb6ce" meeting="false" start="2019-04-11" duration="1" complete="100" thirdDate="2019-04-03" thirdDate-constraint="0" expand="true">
+                <depend id="131" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="131" name="environnement de travail prêt" color="#8cb6ce" meeting="true" start="2019-05-07" duration="0" complete="0" thirdDate="2019-03-01" thirdDate-constraint="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+                <depend id="40" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="40" name="développement du plugin" color="#000000" meeting="false" start="2019-05-08" duration="18" complete="0" thirdDate="2019-03-22" thirdDate-constraint="1" priority="2" expand="true">
+            <notes><![CDATA[Ici se trouve les tâches concernant les fonctions principales]]></notes>
+            <depend id="25" type="1" difference="0" hardness="Strong"/>
+            <depend id="29" type="1" difference="0" hardness="Strong"/>
+            <task id="15" name="interroger une API REST" color="#8cb6ce" meeting="false" start="2019-05-08" duration="5" complete="0" thirdDate="2019-03-12" thirdDate-constraint="0" expand="true">
+                <depend id="16" type="1" difference="0" hardness="Strong"/>
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="16" name="obtenir du contenu distant de l'API REST" color="#8cb6ce" meeting="false" start="2019-05-08" duration="5" complete="0" thirdDate="2019-05-01" thirdDate-constraint="0" expand="true">
+                <depend id="17" type="2" difference="5" hardness="Strong"/>
+                <depend id="18" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="17" name="mise en forme du contenu en fonction du format" color="#8cb6ce" meeting="false" start="2019-05-22" duration="8" complete="0" thirdDate="2019-04-10" thirdDate-constraint="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="18" name="écriture du shortcode" color="#8cb6ce" meeting="false" start="2019-05-15" duration="1" complete="0" thirdDate="2019-04-10" thirdDate-constraint="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" name="ajout d'un menu de configuration à la page admin des sites wordpress" color="#8cb6ce" meeting="false" start="2019-05-16" duration="1" complete="0" thirdDate="2019-04-03" thirdDate-constraint="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+                <depend id="30" type="1" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" name="sauvegarde des données de configuration" color="#8cb6ce" meeting="false" start="2019-05-17" duration="1" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+                <depend id="22" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="22" name="créer les fonctions de test - conception" color="#8cb6ce" meeting="false" start="2019-05-20" duration="2" complete="0" thirdDate="2019-04-15" thirdDate-constraint="0" expand="true">
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="23" name="créer les fonctions de test - écriture" color="#8cb6ce" meeting="false" start="2019-05-22" duration="2" complete="0" thirdDate="2019-04-17" thirdDate-constraint="0" expand="true">
+                <depend id="24" type="1" difference="0" hardness="Strong"/>
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="24" name="mise en place de l'interface pour qu'un administrateur de site wordpress puisse tester le plugin" color="#8cb6ce" meeting="false" start="2019-05-22" duration="1" complete="0" thirdDate="2019-04-11" thirdDate-constraint="0" expand="true">
+                <depend id="47" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="47" name="fin de la partie principale du plugin" color="#8cb6ce" meeting="true" start="2019-06-03" duration="0" complete="0" thirdDate="2019-04-03" thirdDate-constraint="0" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="25" name="documentation" color="#000000" meeting="false" start="2019-05-08" duration="24" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
+            <notes><![CDATA[Ici se trouve les tâches correspondant à la contrainte sur la documentation du projet]]></notes>
+            <task id="26" name="1er livrable" color="#8cb6ce" meeting="false" start="2019-05-09" duration="1" complete="0" thirdDate="2019-04-24" thirdDate-constraint="0" expand="true">
+                <depend id="27" type="2" difference="10" hardness="Strong"/>
+            </task>
+            <task id="27" name="2e livrable" color="#8cb6ce" meeting="false" start="2019-05-24" duration="1" complete="0" thirdDate="2019-04-25" thirdDate-constraint="0" expand="true">
+                <depend id="28" type="2" difference="10" hardness="Strong"/>
+            </task>
+            <task id="28" name="3e livrable" color="#8cb6ce" meeting="false" start="2019-06-10" duration="1" complete="0" thirdDate="2019-05-03" thirdDate-constraint="0" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="29" name="documentation du plugin" color="#8cb6ce" meeting="false" start="2019-05-08" duration="5" complete="0" thirdDate="2019-04-22" thirdDate-constraint="0" expand="true">
+                <depend id="30" type="1" difference="0" hardness="Strong"/>
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="30" name="guide de configuration du plugin" color="#8cb6ce" meeting="false" start="2019-05-16" duration="3" complete="0" thirdDate="2019-04-12" thirdDate-constraint="0" expand="true">
+                <depend id="35" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="35" name="fin de la documentation" color="#8cb6ce" meeting="true" start="2019-06-11" duration="0" complete="0" thirdDate="2019-04-03" thirdDate-constraint="0" expand="true">
+                <depend id="31" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="31" name="tâches optionnelles" color="#000000" meeting="false" start="2019-06-11" duration="2" complete="0" thirdDate="2019-04-03" thirdDate-constraint="0" priority="3" expand="true">
+            <notes><![CDATA[Ici se trouve les tâches correspondant à la fonction de service complémentaire]]></notes>
+            <task id="32" name="coder le cache" color="#8cb6ce" meeting="false" start="2019-06-11" duration="1" complete="0" thirdDate="2019-05-15" thirdDate-constraint="0" expand="true">
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="33" name="modifier la procédure de communication avec l'API REST pour tenir compte du cache" color="#8cb6ce" meeting="false" start="2019-06-12" duration="1" complete="0" thirdDate="2019-05-16" thirdDate-constraint="0" expand="true">
+                <depend id="34" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="34" name="fin du plugin" color="#8cb6ce" meeting="true" start="2019-06-13" duration="0" complete="0" thirdDate="2019-04-03" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Ye SUN" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="1" name="Sébastien NAL" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="23" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="50.0"/>
+        <allocation task-id="22" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="50.0"/>
+        <allocation task-id="15" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="60.0"/>
+        <allocation task-id="16" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="20.0"/>
+        <allocation task-id="17" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="18" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="133" resource-id="0" function="SoftwareDevelopment:10" responsible="true" load="40.0"/>
+        <allocation task-id="9" resource-id="0" function="SoftwareDevelopment:10" responsible="true" load="50.0"/>
+        <allocation task-id="10" resource-id="0" function="SoftwareDevelopment:10" responsible="true" load="30.0"/>
+        <allocation task-id="8" resource-id="0" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="0" function="SoftwareDevelopment:10" responsible="true" load="50.0"/>
+        <allocation task-id="11" resource-id="0" function="SoftwareDevelopment:10" responsible="true" load="50.0"/>
+        <allocation task-id="1" resource-id="0" function="SoftwareDevelopment:10" responsible="false" load="50.0"/>
+        <allocation task-id="38" resource-id="0" function="SoftwareDevelopment:10" responsible="false" load="60.0"/>
+        <allocation task-id="4" resource-id="0" function="SoftwareDevelopment:10" responsible="false" load="20.0"/>
+        <allocation task-id="3" resource-id="0" function="SoftwareDevelopment:10" responsible="false" load="50.0"/>
+        <allocation task-id="26" resource-id="0" function="SoftwareDevelopment:10" responsible="true" load="10.0"/>
+        <allocation task-id="27" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="0" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="29" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="10.0"/>
+        <allocation task-id="30" resource-id="0" function="SoftwareDevelopment:10" responsible="false" load="20.0"/>
+        <allocation task-id="32" resource-id="0" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="33" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="24" resource-id="1" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="22" resource-id="1" function="Default:0" responsible="false" load="50.0"/>
+        <allocation task-id="17" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="19" resource-id="1" function="Default:0" responsible="true" load="40.0"/>
+        <allocation task-id="21" resource-id="1" function="Default:0" responsible="true" load="40.0"/>
+        <allocation task-id="133" resource-id="1" function="SoftwareDevelopment:10" responsible="true" load="40.0"/>
+        <allocation task-id="9" resource-id="1" function="SoftwareDevelopment:10" responsible="false" load="50.0"/>
+        <allocation task-id="10" resource-id="1" function="SoftwareDevelopment:10" responsible="true" load="30.0"/>
+        <allocation task-id="8" resource-id="1" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="45" resource-id="1" function="SoftwareDevelopment:10" responsible="true" load="50.0"/>
+        <allocation task-id="11" resource-id="1" function="SoftwareDevelopment:10" responsible="true" load="50.0"/>
+        <allocation task-id="1" resource-id="1" function="SoftwareDevelopment:10" responsible="true" load="50.0"/>
+        <allocation task-id="38" resource-id="1" function="SoftwareDevelopment:10" responsible="true" load="60.0"/>
+        <allocation task-id="4" resource-id="1" function="SoftwareDevelopment:10" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="14" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="26" resource-id="1" function="Default:0" responsible="true" load="20.0"/>
+        <allocation task-id="27" resource-id="1" function="SoftwareDevelopment:10" responsible="false" load="100.0"/>
+        <allocation task-id="28" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="29" resource-id="1" function="Default:0" responsible="false" load="40.0"/>
+        <allocation task-id="30" resource-id="1" function="Default:0" responsible="true" load="20.0"/>
+        <allocation task-id="32" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="33" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="16" resource-id="1" function="Default:0" responsible="false" load="20.0"/>
+        <allocation task-id="15" resource-id="1" function="Default:0" responsible="false" load="20.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2019-04-22" end="2019-05-06" resourceid="0"/>
+        <vacation start="2019-04-13" end="2019-04-22" resourceid="0"/>
+        <vacation start="2019-04-22" end="2019-05-06" resourceid="1"/>
+        <vacation start="2019-04-13" end="2019-04-22" resourceid="1"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
