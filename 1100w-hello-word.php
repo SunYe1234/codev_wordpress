@@ -1,21 +1,17 @@
 <?php
 /*
-Plugin Name: show IMT official site
-Descriprion: show the content of IMT official site where the shortcode 'get_from_IMTsite' is used
+Plugin Name: show the content obtained from an API
+Descriprion: show the content obtained from an API where the shortcode 'get_from_IMTsite' is used
 Version: 1.0
 */
 
 /*Admin Pages*/
 
-$post_data=array(
-	"id"=>"100101","titre"=>"ccc"
-);
-
-if(isset($_POST["URL"]))
+if(isset($_POST["URL"])) ##verify if there was a POST request made.
 {
-	$URL=$_POST["URL"];
-	file_put_contents("/opt/lampp/htdocs/wordpress/wp-content/plugins/1100w-hello-word/url.txt",$URL);
-	echo "<h2>$URL saved in the txt</h2>";
+	$URL=$_POST["URL"];	##url of the API
+	file_put_contents("/opt/lampp/htdocs/wordpress/wp-content/plugins/1100w-hello-word/url.txt",$URL); ##we stock it in a file
+	echo "<h2>$URL saved in the txt</h2>";	##and print a message #debug
 
 	/*$result=curl_GET($URL);
 	echo $result;
@@ -24,7 +20,7 @@ if(isset($_POST["URL"]))
 	#echo "after decoding:";
 	var_dump($result_J);
 	#echo $result_J->id;*/
-	 get_from_url();
+	 get_from_url();		##we can now call the function that asks the API for data
 }
 
 /* 
@@ -33,18 +29,19 @@ get the JSON data of url obtained from txt using CURL
 
 function curl_GET($url)
 {
+	##initialization of the request
 	$ch=curl_init();
-	
+	##configuration of the request : no header, no ssl verification
 	curl_setopt($ch,CURLOPT_URL,$url);
 	curl_setopt($ch,CURLOPT_RETURNTRANSFER,1);
 	curl_setopt($ch,CURLOPT_HEADER,0);
 	curl_setopt($ch,CURLOPT_SSL_VERIFYPEER,false);
 	curl_setopt($ch,CURLOPT_SSL_VERIFYHOST,false);
-
+	##execution of the request and stockage of the content obtained
 	$out_put=curl_exec($ch);
+	##closure of the request
 	curl_close($ch);
-	return $out_put;
-
+	return $out_put; ##return the content
 }
 
 
@@ -64,7 +61,7 @@ and transform it to an object array
 ## get the json data of $URL
 	$content=curl_GET($URL);
 
-## store the data in the content.txt
+## store the data in content.txt
 	file_put_contents("/opt/lampp/htdocs/wordpress/wp-content/plugins/1100w-hello-word/content.txt",$content);
 
 ## $content_J is an array of object established from $content
@@ -88,8 +85,10 @@ and transform it to an object array
 */
 function show_table($array)
 {
+	##creation of the table
 	echo "<table width=\"100%\" boder=10>";
 	echo "<tr><th align=\"center\">id</th><th align=\"center\">titre</th><th align=\"center\">contenu</th></tr>";
+	##let's fill in the table
 	foreach($array as $object)
 	{
 		echo "<tr><td align=\"center\">$object->id</td>";
