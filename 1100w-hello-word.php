@@ -1,7 +1,7 @@
 <?php
 /*
-Plugin Name: show IMT official site
-Descriprion: show the content of IMT official site where the shortcode 'get_from_IMTsite' is used
+Plugin Name: Get From API REST
+Descriprion: get the content of a choosen API RESTIMT official site where the shortcode 'get_from_API' is used
 Version: 1.0
 */
 /*Admin Pages*/
@@ -139,7 +139,7 @@ function addConfigurationPage()
 */
 function create_shortcode()
 {
-	add_shortcode('get_from_IMTsite','get_from_url');
+	add_shortcode('get_from_API','get_from_url');
 }
 /*
 activation of the configuration and shortcode
